@@ -5,3 +5,6 @@ class School
     @name = name
     @roster = {}
 end
+
+def add_student(name, grade)
+  if @roster.none? {|g,n| g == grade}
