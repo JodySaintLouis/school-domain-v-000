@@ -10,3 +10,5 @@ def add_student(name, grade)
   if @roster.none? {|g,n| g == grade}
     @roster[grade] = []
   end
+    @roster[grade] << name
+  end
